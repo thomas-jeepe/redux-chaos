@@ -1,0 +1,27 @@
+{
+  "name": "redux-chaos",
+  "version": "1.0.0",
+  "description": "Dead simple chaos/property testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomas-jeepe/redux-chaos.git"
+  },
+  "keywords": [
+    "chaos",
+    "redux",
+    "property",
+    "test",
+    "chaos",
+    "testing"
+  ],
+  "author": "thomas-jeepe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomas-jeepe/redux-chaos/issues"
+  },
+  "homepage": "https://github.com/thomas-jeepe/redux-chaos#readme"
+}
