@@ -1,2 +1,9 @@
-exports.chaos=function chaos(t,a,e){for(var h,n,o=0;1e5>o;o++)h=t.getState(),n=a[~~(Math.random()*a.length)];t.dispatch(n),e(h,t.getState(),n)||0}
-// so beautiful
+exports.chaos = function chaos (store, actions, each) {
+ 	for(var i = 0; i < 10000; i++) {
+ 		var prevState = store.getState()
+ 		var action = actions[Math.floor(Math.random() * actions.length)]
+ 		store.dispatch(action)
+ 		if(each)
+		 each(prevState, store.getState(), action)
+ 	}
+}

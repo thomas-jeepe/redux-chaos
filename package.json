@@ -1,6 +1,6 @@
 {
   "name": "redux-chaos",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Dead simple chaos/property testing",
   "main": "index.js",
   "scripts": {
