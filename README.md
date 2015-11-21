@@ -1,7 +1,7 @@
 # redux-chaos
 Dead Simple Chaos/Property Testing with Redux
 
-This randomly chooses actions from an array 100,000 times and dispatches it to a store with hook on each repetition.
+This randomly chooses an action from an array 100,000 times and dispatches it to a store with a hook on each repetition.
 
 ##Setup
 
@@ -42,7 +42,7 @@ function counter(state = {count: 0, other: ''}, action) {
 		case 'AYYY': 
 			return {
 				count: state.count,
-				other: state.other.length > 50 ? state.other : state.other + 'lo'
+				other: state.other.length >= 50 ? state.other : state.other + 'lo'
 			}
     default:
       return state
