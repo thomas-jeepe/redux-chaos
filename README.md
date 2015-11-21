@@ -1,9 +1,16 @@
 # redux-chaos
 Dead Simple Chaos/Property Testing with Redux
 
-This randomly chooses actions from an array 100,000 times and dispatches it to a store and a hook on each repetition.
+This randomly chooses actions from an array 100,000 times and dispatches it to a store with hook on each repetition.
 
-##chaos `(Store: ReduxStore, Actions: Array<Object | Function>, Each: ?Function)`
+##Setup
+
+`npm i --save-dev redux-chaos`
+```javascript
+import { chaos } from 'redux-chaos'
+```
+
+###chaos `(Store: ReduxStore, Actions: Array<Object | Function>, Each: ?Function)`
 
 Store: any redux store
 
@@ -16,6 +23,8 @@ Each is executed every iteration and given the parameters above, self explanator
 ##Example
 
 ```javascript
+import { chaos } from 'redux-chaos'
+
 function counter(state = {count: 0, other: ''}, action) {
   switch (action.type) {
     case 'INCREMENT_COUNTER':
