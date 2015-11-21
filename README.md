@@ -40,7 +40,7 @@ function counter(state = {count: 0, other: ''}, action) {
 		case 'AYYY': 
 			return {
 				count: state.count,
-				other: state.other.length > 50 ? state.other : state.other + 'lo'
+				other: state.other.length >= 50 ? state.other : state.other + 'lo'
 			}
     default:
       return state
