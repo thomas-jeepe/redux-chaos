@@ -10,11 +10,13 @@ This randomly chooses actions from an array 100,000 times and dispatches it to a
 import { chaos } from 'redux-chaos'
 ```
 
-###chaos `(Store: ReduxStore, Actions: Array<Object | Function>, Each: ?Function)`
+###chaos `(Store: ReduxStore, Actions: Array<Object | Function> | Object, Each: ?Function)`
 
 Store: any redux store
 
-Actions: array of your actions
+Actions: your object of actions or an array of your actions
+
+If you have an actions file, you can simply use `import * as actions from './actions' for the actions.
 
 Each: `(prevState: any, nextState: any, action: Object | Function): void`
 
