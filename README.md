@@ -16,7 +16,7 @@ Store: any redux store
 
 Actions: your object of actions or an array of your actions
 
-If you have an actions file, you can simply use `import * as actions from './actions' for the actions.`
+If you have an actions file, you can simply use `import * as actions from './actions'` for the actions.
 
 Each: `(prevState: any, nextState: any, action: Object | Function): void`
 
